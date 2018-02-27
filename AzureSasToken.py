@@ -11,7 +11,7 @@ from hmacSha256 import HMACSha256
 # ============================================================================
 # ============================================================================
 
-def generateAzureSasToken(uri, key, expiryTimestamp, policy_name=None) :
+def GenerateAzureSasToken(uri, key, expiryTimestamp, policy_name=None) :
 
     def _quote(s) :
         r = ''
