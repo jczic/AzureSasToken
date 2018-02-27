@@ -1,5 +1,9 @@
+"""
+The MIT License (MIT)
+Copyright © 2018 Jean-Christophe Bos & HC² (www.hc2.fr)
+"""
 
-from ubinascii  import a2b_base64, b2a_base64
+from binascii   import a2b_base64, b2a_base64
 from time       import time
 from hmacSha256 import HMACSha256
 
@@ -7,7 +11,7 @@ from hmacSha256 import HMACSha256
 # ============================================================================
 # ============================================================================
 
-def generateAzureSasToken(uri, key, expiryTimestamp, policy_name=None):
+def generateAzureSasToken(uri, key, expiryTimestamp, policy_name=None) :
 
     def _quote(s) :
         r = ''
