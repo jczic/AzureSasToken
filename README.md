@@ -1,8 +1,12 @@
 # AzureSasToken
-MS Azure Shared Access Signature Token Generator for MicroPython
+
+### Microsoft Azure "Shared Access Signature" token generator, for MicroPython (used on ESP32 and [Pycom](http://www.pycom.io) modules)
 
 Usage :
 ```python
-from AzureSasToken import generateAzureSasToken
-token = generateAzureSasToken(uri, key, expiryTimestamp, policy_name=None)
+token = AzureSasToken.GenerateAzureSasToken(uri, key, expiryTimestamp, policy_name=None)
 ```
+
+### By JC`zic for [HC²](https://www.hc2.fr) ;')
+
+*Keep it simple, stupid* :+1:
