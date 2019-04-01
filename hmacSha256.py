@@ -27,7 +27,7 @@ def HMACSha256(keyBin, msgBin) :
             res[x] = t[d[x]]
         return res
     
-    keyBin = keyBin + chr(0) * (block_size - len(keyBin))
+    keyBin = keyBin + b'\x00' * (block_size - len(keyBin))
   
     inner = sha256()
     inner.update(translate(keyBin, trans_36))
